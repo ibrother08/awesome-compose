@@ -28,3 +28,9 @@ scrape_configs:
   static_configs:
   - targets:
     - 192.168.192.100:8080
+- job_name: goapp
+  honor_timestamps: true
+  scheme: http
+  file_sd_configs:
+  - files:
+    - 'targets-goapp.json'
